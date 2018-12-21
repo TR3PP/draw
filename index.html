@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>HTML Starter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dist/css/main.css" type="text/css">
-  </head>
-  <body>
-    <h1>HTML Starter</h1>
-    <script src="./dist/js/main.js"></script>
-  </body>
+    <head>
+       <meta charset="UTF-8">
+       <title>Draw</title>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+       <link rel="stylesheet" href="./dist/css/main.css">
+    </head>
+    <body>
+      <div class="wrapper">
+        <nav>
+          <ul>
+            <li ><span id="trackX">X:=</span></li>
+            <li ><span id="trackY">Y:=</span></li>
+            <li>
+                <li><button id="btnRect">Draw - Rectangle</button></li>
+                <li><button id="btnLine">Draw - Line</button></li>
+                <li><button id="btnCircle">Draw - Circle</button></li>
+                <li><button id="btnPath">Draw - Path</button></li>
+                <li><button id="btnTriangle">Draw - Triangle</button></li>
+                <li>
+                  <label for="fillColor">Fill</label>
+                  <input type="color" id="fillColor">
+                  <input type="checkbox" id="randFillColor">
+                  <label for="randFillColor">Random</label>
+                </li>
+                <li>
+                  <label for="strokeColor">Stroke</label>
+                  <input type="color" id="strokeColor">
+                  <input type="checkbox" id="randStrokeColor">
+                  <label for="randStrokeColor">Random</label>                  
+                </li>
+            </li>
+          </ul>
+        </nav>
+        <main></main>
+      </div>
+      <script src="./dist/js/main.js"></script>
+    </body>
 </html>
